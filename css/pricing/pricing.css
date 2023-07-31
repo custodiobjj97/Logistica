@@ -1,0 +1,72 @@
+.pricing{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.pricing span{
+    display: inline-block;
+    color: var(--color-button);
+    margin-bottom: 2rem;
+}
+
+.pricing h2{
+    font-size: 2.45rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem;
+}
+
+.pricing-group .pricing-box{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.pricing-group .pricing-box h5{
+    color: var(--color-secundary);
+    font-size: 1.1rem;
+}
+
+.pricing-group .pricing-box h3{
+    font-size: 1.40rem;
+}
+
+.pricing-group .pricing-box h5,
+.pricing-group .pricing-box h3{
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.pricing-group .pricing-box ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.pricing-group .pricing-box ul li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.pricing-group .pricing-box ul li  i{
+    color: hsl(152 69% 31%);
+}
+@media (min-width: 920px){
+    .pricing-group{
+        grid-template-columns: repeat(3,1fr);
+        padding: 2rem;
+    }
+
+    .pricing h2{
+       text-align: center;
+    }
+}

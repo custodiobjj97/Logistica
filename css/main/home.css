@@ -1,0 +1,73 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*make slider touch*/
+
+.slider-container{
+    height: 100%;
+    display: inline-flex;
+    cursor: grab;
+    transform: translateX(0);
+    transition: transform .3s ease-in-out;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100vw;
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:center;
+    user-select: none;
+    text-align: left;
+    padding: .90rem;
+   
+}
+
+.grabbing{
+    cursor: grabbing;
+}
+
+
+
+
+/*change is font and make btn*/
+.slide h1{
+    font-size:2.4rem;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+.slide .color{
+    color: var(--color-primary);
+}
+
+.slide p{
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--color-white);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.slide-bg-1{
+    background-image: url('../../img/carousel-1.jpg');
+    
+}
+
+
+
+.slide-bg-2 {
+    background-image: url('../../img/carousel-2.jpg');
+}
+
+@media (min-width: 920px){
+    .slide h1{
+        font-size: 4rem;
+    }
+}
